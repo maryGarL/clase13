@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Validaciones</title>
+  <link rel = "stylesheet" type="text/css" href="assets/css/Form.css">
+</head>
+<body>
+  <center>
+  <h1>Formulario de Datos</h1>
+  <form class="" action="file:///C:/Users/LABORATORIA%200018le/Documents/clase13/gracias.html" method="post" center>
+    <div class="">
+      <label for="">Nombre</label>
+      <br>
+      <input title="Ingrese un nombre" type="text" name="" value="" required>
+    </div>
+    <div class="">
+      <label for="">Apellido</label>
+      <br>
+      <input title="Ingrese un apellifo" type="text" name="" value="" required="Ingrese un apellido">
+    </div>
+    <div class="">
+      <label for="">Telefono</label>
+      <br>
+      <input title="Ingrese un numero valido" type="text" name="" value="" required="Ingrese un valor válido" pattern="^[9]\d{8}$" maxlength="9" onkeypress="if(event.keycode<45 || event.keycode>57) event.returnValue = false;">
+    </div>
+    <div class="">
+      <label for="">Escoje tu carro para continuar</label>
+      <br>
+      <select class="" name="Seleccione" value = "Ingrese su carro" >
+        <<option hidden>Elije tu carro</option>
+        <option value="">Mercedes</option>
+        <option value="">Volkswagen</option>
+        <option value="">Volvo</option>
+        <option value="">Mitsubishi</option>
+      </select>
+    </div>
+      <div class="">
+        <label for="">Email</label>
+        <br>
+        <input type="email" title="Igrese un correo válido" name="email" value="" required>
+      </div>
+      <div class="">
+        <label for="">Contraseña</label>
+        <br>
+        <input type="password" name="" value="" required="valor minimo 6 digitos" pattern=".{6,}">
+      </div>
+      <div class="">
+        <br>
+        <input type="submit" name="" id="">
+      </div>
+  </form>
+  <script type="text/javascript" src ="assets/js/main.js">
+  </script>
+</center>
+</body>
+</html>
